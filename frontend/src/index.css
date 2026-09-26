@@ -1,0 +1,42 @@
+/* src/index.css */
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&family=Inter:wght@400;500;600&display=swap');
+
+:root {
+  /* --- Colors --- */
+  --bg-deep: #05050A;
+  --card-bg: rgba(16, 18, 27, 0.6);
+  --card-border: rgba(255, 255, 255, 0.08);
+
+  --cyan: #00f0ff;
+  --cyan-dim: rgba(0, 240, 255, 0.2);
+  --neon-green: #39ff14;
+  --neon-red: #ff003c;
+
+  --text-main: #ffffff;
+  --text-muted: #8b92a5;
+
+  /* --- Typography --- */
+  --font-display: 'Space Grotesk', sans-serif;
+  --font-body: 'Inter', sans-serif;
+
+  /* --- Layout Variables --- */
+  --nav-height: 70px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--bg-deep);
+  /* Cyberpunk Glowing Background Effect */
+  background-image:
+    radial-gradient(circle at 15% 50%, rgba(0, 240, 255, 0.05), transparent 25%),
+    radial-gradient(circle at 85% 30%, rgba(138, 43, 226, 0.05), transparent 25%);
+  color: var(--text-main);
+  font-family: var(--font-body);
+  min-height: 100vh;
+  overflow-x: hidden;
+}
